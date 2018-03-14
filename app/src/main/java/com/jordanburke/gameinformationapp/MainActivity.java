@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Uri uriUrl = Uri.parse(url);
         Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
         startActivity(launchBrowser);
+        //test
 
 
     }
