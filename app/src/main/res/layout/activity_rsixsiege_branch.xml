@@ -4,72 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jordanburke.gameinformationapp.MainActivity">
+    tools:context="com.jordanburke.gameinformationapp.RsixsiegeBranchActivity">
 
     <TextView
-        android:id="@+id/start_text_view"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="monospace"
-        android:text="Which game do you want info for?"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="24sp"
+        android:layout_marginTop="32dp"
+        android:text="Choose one!"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/rainbow_button"
+        android:id="@+id/tips_tricks_button"
         style="@android:style/Widget.Button.Inset"
-        android:layout_width="201dp"
-        android:layout_height="62dp"
+        android:layout_width="184dp"
+        android:layout_height="63dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:fontFamily="casual"
-        android:text="R6S"
+        android:text="Tip and Tricks 1"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/start_text_view" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/wow_button"
-        style="@android:style/Widget.DeviceDefault.Button.Inset"
-        android:layout_width="201dp"
-        android:layout_height="104dp"
+        android:id="@+id/map_callouts_button"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="184dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="casual"
+        android:text="Map Callouts"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tips_tricks_button" />
+
+    <Button
+        android:id="@+id/siege_button_forum"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="164dp"
+        android:layout_height="63dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:fontFamily="casual"
-        android:text="World of Warcraft"
-        android:textColor="@android:color/holo_red_dark"
+        android:text="Forums"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/rainbow_button"
+        app:layout_constraintBottom_toTopOf="@+id/tips_tricks_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/call_of_duty_button"
-        style="@android:style/Widget.Button.Inset"
-        android:layout_width="201dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="casual"
-        android:text="Call of duty"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rainbow_button" />
-
 </android.support.constraint.ConstraintLayout>

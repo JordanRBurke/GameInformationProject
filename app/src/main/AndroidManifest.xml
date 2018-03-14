@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WowBranchScreen"></activity>
+        <activity android:name=".WowBranchScreen" />
+        <activity android:name=".CallOfDutyBranch" />
+        <activity android:name=".RsixsiegeBranchActivity"></activity>
     </application>
 
 </manifest>

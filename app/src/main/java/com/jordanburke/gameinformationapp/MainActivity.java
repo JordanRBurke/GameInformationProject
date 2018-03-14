@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button wowLinkButton;
     private Button rainbowSixButton;
+    private Button callOfDutyButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +22,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         wowLinkButton = findViewById(R.id.wow_button);
         rainbowSixButton = findViewById(R.id.rainbow_button);
+        callOfDutyButton = findViewById(R.id.call_of_duty_button);
         wowButtonPress();
         rainbowButtonPress();
+        callOfDutyButtonPress();
 
     }
 
@@ -40,10 +43,22 @@ public class MainActivity extends AppCompatActivity {
         rainbowSixButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToUrl( "https://forums.ubi.com/forumdisplay.php/64-Rainbow-Six" );
+
+                Intent thisIntent = new Intent(MainActivity.this, RsixsiegeBranchActivity.class);
+                MainActivity.this.startActivity(thisIntent);
             }
         });
 
+
+    }
+    public void callOfDutyButtonPress() {
+        callOfDutyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent thisIntent = new Intent(MainActivity.this, CallOfDutyBranch.class);
+                MainActivity.this.startActivity(thisIntent);
+            }
+        });
 
     }
     private void goToUrl (String url) {
