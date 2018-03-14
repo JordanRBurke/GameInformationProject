@@ -13,25 +13,38 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     private Button wowLinkButton;
+    private Button rainbowSixButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         wowLinkButton = findViewById(R.id.wow_button);
+        rainbowSixButton = findViewById(R.id.rainbow_button);
         wowButtonPress();
+        rainbowButtonPress();
+
     }
 
     public void wowButtonPress() {
         wowLinkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToUrl( "https://us.battle.net/forums/en/wow/" );
+                Intent thisIntent = new Intent(MainActivity.this, WowBranchScreen.class);
+                MainActivity.this.startActivity(thisIntent);
+
             }
         });
-//
-//
-//
+    }
+    public void rainbowButtonPress() {
+        rainbowSixButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToUrl( "https://forums.ubi.com/forumdisplay.php/64-Rainbow-Six" );
+            }
+        });
+
+
     }
     private void goToUrl (String url) {
         Uri uriUrl = Uri.parse(url);
